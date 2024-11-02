@@ -10,65 +10,45 @@
 <body>
     <header class="cabecalho">
         <section class="cabecalho__conteudo">
-            <img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja" >
+            <img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja">
 
-            <form action="#" method="GET" class="cabecalho__conteudo_pesquisa">
+            <form class="cabecalho__conteudo__pesquisa" action="#" method="GET">
                 <button class="cabecalho__conteudo__pesquisa__lupa"><img src="./assets/images/icons/lupa.png" alt="Lupa de pesquisa"></button>
                 <input class="cabecalho__conteudo__pesquisa__barra" type="search" name="pesquisa" placeholder="Digite o item desejado">
             </form>
 
             <div class="cabecalho__conteudo__acesso">
-                <a href="#"><img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/sacola_compras.png" alt="Sacola de compras"></a>
+                <a href="#"><img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/sacola_compras.png" title="Bolsa de compras" alt="Bolsa de compras"></a>
 
-                <a href="#"><img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/perfil.png" alt="perfil do usuário"></a>
+                <a href="#"><img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/perfil.png" title="Perfil do Usuário" alt="perfil do usuário"></a>
             </div>
         </section>
 
         <nav class="cabecalho__conteudo__navegacao">
-            <a class="cabecalho__conteudo__navegacao__link" href="#">Home</a>
-            <a class="cabecalho__conteudo__navegacao__link" href="#">Novidades</a>
-            <a class="cabecalho__conteudo__navegacao__link" href="#">Promoções</a>
-            <a class="cabecalho__conteudo__navegacao__link" href="#">Vestuário</a>
+            <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__novidades">Novidades</a>
+            <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__vendidos">Mais Vendidos</a>
+            <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__promocoes">Promoções</a>
+            <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__vestuario">Vestuário</a>
         </nav>
     </header>
     <main class="conteudo">
-        <section class="conteudo__atrativos">
-            <div>
-
-            </div>        </section>
-        <section class="conteudo__secao" style="background-color: white;">
-            <h2>NOVIDADES</h2>
-            <div class="conteudo__secao__classificacao">
-                
-                <div class="conteudo__secao__classificacao__numero" style="background-color: #D9D9D9;">
-                
-                </div>
-                <div class="conteudo__secao__classificacao__numero" style="background-color: #D9D9D9;">
-                
-                </div>  
-                <div class="conteudo__secao__classificacao__numero" style="background-color: #D9D9D9;">
-                
-                </div>
-            </div>
+        <section>
+            <img class="conteudo__imagem" src="./assets/images/atrativos.jpg" alt="Representação de atrativos">
+        </section> 
+        <section id="conteudo__novidades">
+            
+        </section >
+        <section id="conteudo__vendidos">
+            
         </section>
-        <section class="conteudo__secao">
-            <h2>MAIS VENDIDOS</h2>
+        <section id="conteudo__promocoes">
 
-            <div class="conteudo__secao__classificacao">
-                <div class="conteudo__secao__classificacao__numero">
-                </div>
-                <div class="conteudo__secao__classificacao__numero">
-                </div>
-                <div class="conteudo__secao__classificacao__numero">
-                
-                </div>
-            </div>
         </section>
-        <section class="conteudo__frase">
+        <section id="conteudo__vestuario">
 
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
 
     </footer>
 </body>

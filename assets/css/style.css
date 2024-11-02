@@ -26,54 +26,65 @@ body {
 }
 
 /*Seção do cabeçalho*/
+.cabecalho {
+    width: 100vw;
+}
 
 .cabecalho__conteudo {
     background-color: var(--cor-terciaria);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 0.5rem;
+    padding-top: 15px;
 }
 
 .cabecalho__conteudo__imagem {
     background-color: var(--cor-terciaria);
-    width: 199px;
-    height: 92px;
+    width: 130px;
+    height: 56px;
 }
 
-.cabecalho__conteudo_pesquisa {
+.cabecalho__conteudo__pesquisa {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .cabecalho__conteudo__pesquisa__lupa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5px 12px;
+    padding: 4px 11px;
     background-color: #FFFFFF;
     border: none;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.cabecalho__conteudo__pesquisa__lupa img {
+    width: 27px;
 }
 
 .cabecalho__conteudo__pesquisa__barra {
-    width: 38rem;
-    height: 2.35rem;
+    border: none;
+    width: 43rem; /*43rem*/
+    height: 2.4rem;
+    border-radius: 0px 8px 8px 0px;
 }  
 
 .cabecalho__conteudo__acesso {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    padding: 0px 14px;
 }
 
 .cabecalho__conteudo__acesso__imagem {
-    width: 1.5rem;
-    padding: 0.3rem;
+    width: 22px;
+    padding: 10px ;
 }
 
 .cabecalho__conteudo__acesso__imagem:hover {
     background-color: var(--cor-sexternaria);
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .cabecalho__conteudo__navegacao{
@@ -92,44 +103,19 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
+    padding-top: 6px;
     font-size: 0.75rem;
 }
 
 .cabecalho__conteudo__navegacao__link:hover {
 
-    color: var(--cor-quintenaria);
+    color: var(--cor-hover);
 }
 
 /*Seção do main*/
-h2 {
-    font-weight: 350;
-    font-size: 36px;
-    text-align: center;
-    padding: 70px;
-}
 
-
-.conteudo__secao {
-    background-color: var(--cor-quartenaria);
-    height: 631px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.conteudo__secao__classificacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 90px;
-}
-
-
-.conteudo__secao__classificacao__numero {
-    background-color: #F6F6F6;
-    width: 255px;
-    height: 356px;
+.conteudo__imagem {
+    width: 100%;
 }
 
 
