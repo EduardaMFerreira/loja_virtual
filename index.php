@@ -71,12 +71,20 @@
             </section>
 
         </section >
+
         <section id="conteudo__vendidos">
-            
+            <h2>Mais vendidos</h2>
+            <div class="conteudo__vendidos__classificacao">
+                <img src="./assets/images/mais_vendidos/vestido_de_bolinhas.jpg" alt="3º mais vendido: Vestido de bolinhas">
+                <img src="./assets/images/mais_vendidos/bleizer_azul.png" alt="1º mais vendido: Bleizer Azul">
+                <img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="3º mais vendido: Short dourado">
+            </div>
         </section>
+
         <section id="conteudo__promocoes">
 
         </section>
+
         <section id="conteudo__vestuario">
 
         </section>

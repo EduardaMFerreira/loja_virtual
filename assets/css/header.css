@@ -2,7 +2,7 @@
 
 /*Seção do cabeçalho*/
 .cabecalho {
-    width: 100%;
+    width: 100vw;
 }
 
 .cabecalho__conteudo {
@@ -60,7 +60,7 @@
 }
 
 .cabecalho__conteudo__acesso__imagem:hover {
-    background-color: var(--cor-sexternaria);
+    background-color: var(--cor-sextenaria);
     border-radius: 25%;
 }
 
