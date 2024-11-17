@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Fashion Luar</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
     </header>
     <main class="conteudo">
         <section>
-            <img class="conteudo__imagem" src="./assets/images/atrativos.jpg" alt="Representação de atrativos">
+            <img class="conteudo__imagem" src="./assets/images/coleção.jpg" alt="Representação de atrativos">
         </section> 
         <section id="conteudo__novidades">
             
