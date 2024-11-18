@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Fashion Luar</title>
 </head>
 <body>
-
     <header class="cabecalho">
         <section class="cabecalho__conteudo">
             <img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja">
@@ -82,10 +82,69 @@
         </section>
 
         <section id="conteudo__promocoes">
-
+            <h2>Promoções</h2>
+            <section class="conteudo__novidades__bleizers">
+    
+                <div class="conteudo__novidades__variedade">
+                    <img src="./assets/images/promocoes/blusa_banca.jpg" alt="Blusa Banca">
+                    <h3>Blusa Banca</h3>
+                    <p class="preco">R$ 99,99</p>
+                    <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
+                    <a href="#">Comprar agora</a>
+                </div>
+                <div class="conteudo__novidades__variedade">
+                    <img src="./assets/images/promocoes/vestido_listrado.jpg" alt="Vestido Listrado">
+                    <h3>Vestido Listrado</h3>
+                    <p class="preco">R$ 99,99</p>
+                    <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
+                    <a href="#">Comprar agora</a>
+                </div>
+                <div class="conteudo__novidades__variedade">
+                    <img src="./assets/images/promocoes/moletom.jpg" alt="Moletom">
+                    <h3>Moletom</h3>
+                    <p class="preco">R$ 99,99</p>
+                    <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
+                    <a href="#">Comprar agora</a>
+                </div>
+                <div class="conteudo__novidades__variedade">
+                    <img src="./assets/images/promocoes/calca_de_elastico.jpg" alt="Calça de Elástico">
+                    <h3>Calça de Elástico</h3>
+                    <p class="preco">R$ 99,99</p>
+                    <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
+                    <a href="#">Comprar agora</a>
+                </div>
+            </section>
         </section>
 
         <section id="conteudo__vestuario">
+        <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta_tecido.png" alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/top.png" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta_couro.png" alt="Livro sobre guia Front-end da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
+                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
 
         </section>
     </main>
@@ -93,5 +152,21 @@
     <footer class="rodape">
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            slidesPerGroup: 3, // Adicionado para passar 4 slides por vez
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>

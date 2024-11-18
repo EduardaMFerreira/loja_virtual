@@ -2,6 +2,7 @@
 @import url("./assets/css/header.css");
 @import url("./assets/css/novidades.css");
 @import url("./assets/css/vendidos.css");
+@import url("./assets/css/carrossel.css");
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -26,6 +27,7 @@
 
 body {
     box-sizing: border-box;
+    width: 100%;
 }
 
 

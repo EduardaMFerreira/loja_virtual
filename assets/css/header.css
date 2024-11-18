@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 /*Seção do cabeçalho*/
-.cabecalho {
-    width: 100vw;
-}
 
 .cabecalho__conteudo {
     background-color: var(--cor-terciaria);
