@@ -117,15 +117,15 @@
         </section>
 
         <section id="conteudo__vestuario">
+            <!--
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
-        <!-- Slider main container -->
+        
         <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
+           
             <div class="swiper-pagination"></div>
 
             <div class="swiper-wrapper">
-            <!-- Slides -->
+            
                     <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
                     <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta_tecido.png" alt="Livro sobre liderança em design da alura books"></div>
                     <div class="swiper-slide"><img src="./assets/images/vestuario/cima/top.png" alt="Livro sobre javascript assertivo da alurabooks"></div>
@@ -137,36 +137,186 @@
                     <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
             </div>
 
-            <!-- If we need navigation buttons -->
+           
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
+            
             <div class="swiper-scrollbar"></div>
         </div>
-
-
+-->
+<div class="titulo">Blusas</div>
+    
+    </div>
+        <!-- Primeira linha de produtos -->
+        <div class="scroll-container">
+            <button class="nav-button left" onclick="scrollLeft(0)">&#9664;</button>
+            <div class="product-row" id="product-row-0">
+                <div class="item">
+                    <img src="imagem1.jpg" alt="Produto 1">
+                    <p>Produto 1<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+    
+                </div>
+                <div class="item">
+                    <img src="imagem2.jpg" alt="Produto 2">
+                    <p>Produto 2<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem3.jpg" alt="Produto 3">
+                    <p>Produto 3<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem4.jpg" alt="Produto 4">
+                    <p>Produto 4<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="nav-button right" onclick="scrollRight(0)">&#9654;</button>
+        </div>
+    
+        <!-- Repita para as outras três linhas -->
+        <!-- Segunda linha de produtos -->
+    
+        <div class="scroll-container">
+            <button class="nav-button left" onclick="scrollLeft(1)">&#9664;</button>
+            <div class="product-row" id="product-row-1">
+                <div class="item">
+                    <img src="imagem5.jpg" alt="Produto 5">
+                    <p>Produto 5<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                    <div class="item">
+                        <img src="imagem5.jpg" alt="Produto 5">
+                        <p>Produto 5<br>R$ 99,99</p>
+                        <a href="#" class="button">COMPRAR AGORA</a>
+                    </div>
+    
+                    
+                        <div class="item">
+                            <img src="imagem5.jpg" alt="Produto 5">
+                            <p>Produto 5<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+    
+                       
+                            <div class="item">
+                                <img src="imagem5.jpg" alt="Produto 5">
+                                <p>Produto 5<br>R$ 99,99</p>
+                                <a href="#" class="button">COMPRAR AGORA</a>
+                            </div>
+                            
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="nav-button right" onclick="scrollRight(1)">&#9654;</button>
+        </div>
+    
+        <!-- Terceira linha de produtos -->
+        <div class="scroll-container">
+            <button class="nav-button left" onclick="scrollLeft(2)">&#9664;</button>
+            <div class="product-row" id="product-row-2">
+                <div class="item">
+                    <img src="imagem9.jpg" alt="Produto 9">
+                    <p>Produto 9<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem9.jpg" alt="Produto 9">
+                    <p>Produto 9<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem9.jpg" alt="Produto 9">
+                    <p>Produto 9<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem9.jpg" alt="Produto 9">
+                    <p>Produto 9<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="nav-button right" onclick="scrollRight(2)">&#9654;</button>
+        </div>
+    
+        <!-- Quarta linha de produtos -->
+        <div class="scroll-container">
+            <button class="nav-button left" onclick="scrollLeft(3)">&#9664;</button>
+            <div class="product-row" id="product-row-3">
+                <div class="item">
+                    <img src="imagem13.jpg" alt="Produto 13">
+                    <p>Produto 13<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem13.jpg" alt="Produto 13">
+                    <p>Produto 13<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+     <div class="item">
+                    <img src="imagem13.jpg" alt="Produto 13">
+                    <p>Produto 13<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <div class="item">
+                    <img src="imagem13.jpg" alt="Produto 13">
+                    <p>Produto 13<br>R$ 99,99</p>
+                    <a href="#" class="button">COMPRAR AGORA</a>
+                </div>
+    
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="nav-button right" onclick="scrollRight(3)">&#9654;</button>
+        </div>
+    
         </section>
     </main>
 
-    <footer class="rodape">
-
-    </footer>
+     <!-- Rodapé -->
+     <div class="footer">
+        <img src="c:\Users\gisel\Downloads\WhatsApp Image 2024-11-05 at 14.14.00.jpeg" alt="Fashion Luar">
+        <p>Entre em contato conosco:<br>(XX) XXXXX-XXXX<br>email@gmail.com</p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            slidesPerGroup: 3, // Adicionado para passar 4 slides por vez
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        
+        function scrollLeft(rowId) {
+            const row = document.getElementById(product-row-${rowId});
+            row.scrollBy({ left: -300, behavior: 'smooth' });
+        }
+
+        function scrollRight(rowId) {
+            const row = document.getElementById(product-row-${rowId});
+            row.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+        //const swiper = new Swiper('.swiper', {
+           // spaceBetween: 10,
+            //slidesPerView: 4,
+            //slidesPerGroup: 3, 
+            //pagination: {
+            //    el: '.swiper-pagination',
+           // },
+            //navigation: {
+            //    nextEl: '.swiper-button-next',
+            //    prevEl: '.swiper-button-prev',
+            //},
+        //});
+        
     </script>
 </body>
 </html>
