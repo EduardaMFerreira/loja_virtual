@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Fashion Luar</title>
 </head>
 <body>
     <header class="cabecalho">
         <section class="cabecalho__conteudo">
-            <img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja">
+            <a href="index.php"><img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja"></a>
 
             <form class="cabecalho__conteudo__pesquisa" action="#" method="GET">
                 <button class="cabecalho__conteudo__pesquisa__lupa"><img src="./assets/images/icons/lupa.png" alt="Lupa de pesquisa"></button>
@@ -41,29 +40,29 @@
             <section class="conteudo__novidades__bleizers">
     
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/novidades/bleizer_cinza.png" alt="Bleizer cinza">
-                    <h3>Bleizer Cinza</h3>
+                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_preto.png" alt="Sobretudo Preto">
+                    <h3>Sobretudo Preto</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/novidades/bleizer_verde.png" alt="Bleizer verde">
-                    <h3>Bleizer Verde</h3>
+                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_branco.png" alt="Sobretudo Branco">
+                    <h3>Sobretudo Branco</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/novidades/bleizer_vinho.png" alt="Bleizer vinho">
-                    <h3>Bleizer Vinho</h3>
+                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_bege.png" alt="Sobretudo Bege">
+                    <h3>Sobretudo Bege</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/novidades/bleizer_vermelho.png" alt="Bleizer vermelho">
-                    <h3>Bleizer Vermelho</h3>
+                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_xadrez.png" alt="Sobretudo Xadrez">
+                    <h3>Sobretudo Xadrez</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
@@ -86,29 +85,29 @@
             <section class="conteudo__novidades__bleizers">
     
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/promocoes/blusa_banca.jpg" alt="Blusa Banca">
-                    <h3>Blusa Banca</h3>
+                    <img src="./assets/images/promocoes/saia_longa_rosa.png" alt="Saia Longa Rosa">
+                    <h3>Saia Longa Rosa</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/promocoes/vestido_listrado.jpg" alt="Vestido Listrado">
-                    <h3>Vestido Listrado</h3>
+                    <img src="./assets/images/promocoes/camisa_de_popelina-listrado.png" alt="Popelina Listrada">
+                    <h3>Popelina Listrada</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/promocoes/moletom.jpg" alt="Moletom">
-                    <h3>Moletom</h3>
+                    <img src="./assets/images/promocoes/jaqueta_puffer.png" alt="Jaqueta Puffer">
+                    <h3>Jaqueta Puffer</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img src="./assets/images/promocoes/calca_de_elastico.jpg" alt="Calça de Elástico">
-                    <h3>Calça de Elástico</h3>
+                    <img src="./assets/images/promocoes/calca_alfaiataria_bege.png" alt="Calça Alfaiataria">
+                    <h3>Calça Alfaiataria</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
                     <a href="#">Comprar agora</a>
@@ -117,182 +116,340 @@
         </section>
 
         <section id="conteudo__vestuario">
-            <!--
-        <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
-        
-        <div class="swiper">
-           
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-wrapper">
-            
-                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta_tecido.png" alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/top.png" alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="./assets/images/vestuario/cima/jaqueta_couro.png" alt="Livro sobre guia Front-end da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
-                    <div class="swiper-slide"><img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="Livro sobre Nodejs da alura books"></div>
-            </div>
-
-           
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            
-            <div class="swiper-scrollbar"></div>
-        </div>
--->
-<div class="titulo">Blusas</div>
-    
-    </div>
-        <!-- Primeira linha de produtos -->
-        <div class="scroll-container">
-            <button class="nav-button left" onclick="scrollLeft(0)">&#9664;</button>
-            <div class="product-row" id="product-row-0">
-                <div class="item">
-                    <img src="imagem1.jpg" alt="Produto 1">
-                    <p>Produto 1<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-    
-                </div>
-                <div class="item">
-                    <img src="imagem2.jpg" alt="Produto 2">
-                    <p>Produto 2<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <div class="item">
-                    <img src="imagem3.jpg" alt="Produto 3">
-                    <p>Produto 3<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <div class="item">
-                    <img src="imagem4.jpg" alt="Produto 4">
-                    <p>Produto 4<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-                <!-- Adicione mais itens conforme necessário -->
-            </div>
-            <button class="nav-button right" onclick="scrollRight(0)">&#9654;</button>
-        </div>
-    
-        <!-- Repita para as outras três linhas -->
-        <!-- Segunda linha de produtos -->
-    
-        <div class="scroll-container">
-            <button class="nav-button left" onclick="scrollLeft(1)">&#9664;</button>
-            <div class="product-row" id="product-row-1">
-                <div class="item">
-                    <img src="imagem5.jpg" alt="Produto 5">
-                    <p>Produto 5<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                    <div class="item">
-                        <img src="imagem5.jpg" alt="Produto 5">
-                        <p>Produto 5<br>R$ 99,99</p>
-                        <a href="#" class="button">COMPRAR AGORA</a>
-                    </div>
-    
-                    
+            <div class="titulo">Vestuario</div>
+                
+                <!-- Primeira linha de produtos -->
+                <div class="scroll-container">
+                    <h3>Parte de cima</h3>
+                    <button class="nav-button left" onclick="scrollLeft(0)">&#9664;</button>
+                    <div class="product-row" id="product-row-0">
                         <div class="item">
-                            <img src="imagem5.jpg" alt="Produto 5">
-                            <p>Produto 5<br>R$ 99,99</p>
+                            <img src="./assets/images/vestuario/cima/casaco_felpudo.png" alt="Casaco Felpudo">
+                                <p>Casaco Felpudo<br>R$ 99,99</p>
+                                <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/breizer_marrom.png" alt="Bleizer Marrom">
+                            <p>Bleizer Marrom<br>R$ 99,99</p>
                             <a href="#" class="button">COMPRAR AGORA</a>
                         </div>
-    
-                       
-                            <div class="item">
-                                <img src="imagem5.jpg" alt="Produto 5">
-                                <p>Produto 5<br>R$ 99,99</p>
-                                <a href="#" class="button">COMPRAR AGORA</a>
-                            </div>
-                            
-                <!-- Adicione mais itens conforme necessário -->
-            </div>
-            <button class="nav-button right" onclick="scrollRight(1)">&#9654;</button>
-        </div>
-    
-        <!-- Terceira linha de produtos -->
-        <div class="scroll-container">
-            <button class="nav-button left" onclick="scrollLeft(2)">&#9664;</button>
-            <div class="product-row" id="product-row-2">
-                <div class="item">
-                    <img src="imagem9.jpg" alt="Produto 9">
-                    <p>Produto 9<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/casaco_jeans.png" alt="Casaco Jeans">
+                            <p>Casaco Jeans<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/promocoes/jaqueta_puffer.png" alt="Jaqueta Puffer">
+                            <p>Jaqueta Puffer<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/sobretudo_bege_bolso.png" alt="Sobretudo com Bolso">
+                            <p>Sobretudo c/Bolso<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                            <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/casaco_com_cachecol.png" alt="Casaco com Cachecol">
+                            <p>Casaco c/Cachecol<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/promocoes/camisa_de_popelina-listrado.png" alt="Popelina Listrada">
+                            <p>Popelina Listrada<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/casaco_couro_preto.png" alt="Casaco-Couro Preto">
+                            <p>Casaco Couro Preto<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/top_banco.png" alt="Sobretudo com Bolso">
+                            <p>Top Branco<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                            <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/gola_alta_preta.png" alt="Gola Alta Preta">
+                            <p>Gola Alta Preta<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/floral.png" alt="Floral">
+                            <p>Floral<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/cima/camisa_preta.png" alt="Camisa Preta">
+                            <p>Camisa Preta<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/novidades/sobretudo_bege.png" alt="Sebretudo Bege">
+                            <p>Sobretudo Bege<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/novidades/sobretudo_branco.png" alt="Sobretudo Branco">
+                            <p>Sobretudo Branco<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/novidades/sobretudo_preto.png" alt="Sobretudo Preto">
+                            <p>Sobretudo Preto<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/novidades/sobretudo_xadrez.png" alt="Sobretudo Xadrez">
+                            <p>Sobretudo Xadrez<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                    </div>
+                    <button class="nav-button right" onclick="scrollRight(0)">&#9654;</button>
                 </div>
-    
-                <div class="item">
-                    <img src="imagem9.jpg" alt="Produto 9">
-                    <p>Produto 9<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
+                
+                    
+                <!-- Primeira linha de produtos -->
+                <div class="scroll-container">
+                    <h3>Parte de baixo</h3>
+                    <button class="nav-button left" onclick="scrollLeft(0)">&#9664;</button>
+                    <div class="product-row" id="product-row-0">
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/saia_vinho.png" alt="Saia Longa Vinho">
+                            <p>Saia Longa Vinho<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/promocoes/saia_longa_rosa.png" alt="Saia Longa Rosa">
+                            <p>Saia Longa Rosa<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/saia_bordada.png" alt="Saia Longa Bordada">
+                            <p>Saia Bordada<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/saia_com_cinto.png" alt="Saia c/Cinto">
+                            <p>Saia c/Cinto<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/saia_couro_marrom.png" alt="Saia Couro-Marrom">
+                            <p>Saia Couro-Marrom<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/saia_floral.png" alt="Saia Floral">
+                            <p>Saia Floral<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/promocoes/calca_alfaiataria_bege.png" alt="Calça Alfaiataria/B">
+                            <p>Calça Alfaiataria/B<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_alfaiataria_marrom.png">
+                            <p>Calça Alfaiataria/M<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_alfaiataria_preta.png" alt="Calça Alfaiataria/P">
+                            <p>Calça Alfaiataria/P<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_alfaiataria_rosa.png" alt="Calça Alfaiataria/R">
+                            <p>Calça Alfaiataria/R<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_alfaiataria_xadrez.png" alt="Calça Alfaiataria/X">
+                            <p>Calça Alfaiataria/X<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_couro_vinho.png" alt="Calça Couro/Vinho">
+                            <p>Calça Couro/Vinho<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/calca_couro_preta.png" alt="Calça Couro/Preta">
+                            <p>Calça Couro/Preta<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/jeans_cinza.png" alt="Jeans Cinza">
+                            <p>Jeans Cinza<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/jeans.png" alt="Jeans">
+                            <p>Jeans<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/baixo/jeans_branco.png" alt="Jeans Branco">
+                            <p>Jeans Branco<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                    </div>
+                    <button class="nav-button right" onclick="scrollRight(0)">&#9654;</button>
                 </div>
-    
-                <div class="item">
-                    <img src="imagem9.jpg" alt="Produto 9">
-                    <p>Produto 9<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
+
+                <!-- Primeira linha de produtos -->
+                <div class="scroll-container">
+                    <h3>Conjunto/Vestidos</h3>
+                    <button class="nav-button left" onclick="scrollLeft(0)">&#9664;</button>
+                    <div class="product-row" id="product-row-0">
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_curto_azul.png" alt="Vestido Curto/Azul">
+                            <p>Vestido Curto/Azul<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_curto_preto.png" alt="Vestido Curto/Preto">
+                            <p>Vestido Curto/Preto<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_alça.png" alt="Vestido Longo/Alça">
+                            <p>Vestido Longo/Alça<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_animal_print.png" alt="Animal Print">
+                            <p>Animal Print<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_azul.png" alt="Vestido Longo/Azul">
+                            <p>Vestido Longo/Azul<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_bege.png" alt="Vestido Longo/Bege">
+                            <p>Vestido Longo/B<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                            <!-- Adicione mais itens conforme necessário -->
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_bronze.png" alt="Vestido Longo/Bronze">
+                            <p>Vestido Bronze<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_cinza.png" alt="Vestido Longo/C">
+                            <p>Vestido Cinza<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_floral.png" alt="Vestido Floral">
+                            <p>Vestido Floral<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_paete.png" alt="Vestido Longo/Paete">
+                            <p>Vestido Paete<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_plumas.png" alt="Vestido Longo/Plumas">
+                            <p>Vestido Plumas<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_xadrez.png" alt="Vestido Longo/Xadrez">
+                            <p>Vestido Xadrez<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_longo_vinho.png" alt="Vestido Longo/Vinho">
+                            <p>Vestido Vinho<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/conjunto_branco&preto.png" alt="Conjunto/Preto&Branco">
+                            <p>Conjunto/P&B<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/conjunto_preto&branco.png" alt="Conjunto/Branco&Preto">
+                            <p>Conjunto/B&P<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                
+                        <div class="item">
+                            <img src="./assets/images/vestuario/vest_conj/vestido_curto_alça.png" alt="Vestido Curto/Alça">
+                            <p>Vestido Curto/Alça<br>R$ 99,99</p>
+                            <a href="#" class="button">COMPRAR AGORA</a>
+                        </div>
+                    </div>
+                    <button class="nav-button right" onclick="scrollRight(0)">&#9654;</button>
                 </div>
-    
-                <div class="item">
-                    <img src="imagem9.jpg" alt="Produto 9">
-                    <p>Produto 9<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <!-- Adicione mais itens conforme necessário -->
-            </div>
-            <button class="nav-button right" onclick="scrollRight(2)">&#9654;</button>
-        </div>
-    
-        <!-- Quarta linha de produtos -->
-        <div class="scroll-container">
-            <button class="nav-button left" onclick="scrollLeft(3)">&#9664;</button>
-            <div class="product-row" id="product-row-3">
-                <div class="item">
-                    <img src="imagem13.jpg" alt="Produto 13">
-                    <p>Produto 13<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <div class="item">
-                    <img src="imagem13.jpg" alt="Produto 13">
-                    <p>Produto 13<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-     <div class="item">
-                    <img src="imagem13.jpg" alt="Produto 13">
-                    <p>Produto 13<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <div class="item">
-                    <img src="imagem13.jpg" alt="Produto 13">
-                    <p>Produto 13<br>R$ 99,99</p>
-                    <a href="#" class="button">COMPRAR AGORA</a>
-                </div>
-    
-                <!-- Adicione mais itens conforme necessário -->
-            </div>
-            <button class="nav-button right" onclick="scrollRight(3)">&#9654;</button>
-        </div>
-    
         </section>
     </main>
 
      <!-- Rodapé -->
      <div class="footer">
-        <img src="c:\Users\gisel\Downloads\WhatsApp Image 2024-11-05 at 14.14.00.jpeg" alt="Fashion Luar">
+        <img src="./assets/images/logo.jpg" alt="Fashion Luar">
         <p>Entre em contato conosco:<br>(XX) XXXXX-XXXX<br>email@gmail.com</p>
+        <div>
+            <p>Forma de pagamento:</p>
+            <img src="./assets/images/formas_de_pagamento.webp" alt="Formas de Pagamento">
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         
         function scrollLeft(rowId) {
@@ -304,19 +461,49 @@
             const row = document.getElementById(product-row-${rowId});
             row.scrollBy({ left: 300, behavior: 'smooth' });
         }
-        //const swiper = new Swiper('.swiper', {
-           // spaceBetween: 10,
-            //slidesPerView: 4,
-            //slidesPerGroup: 3, 
-            //pagination: {
-            //    el: '.swiper-pagination',
-           // },
-            //navigation: {
-            //    nextEl: '.swiper-button-next',
-            //    prevEl: '.swiper-button-prev',
-            //},
-        //});
-        
+
     </script>
+    <script>
+
+        const searchForm = document.querySelector('.cabecalho__conteudo__pesquisa');
+        const searchInput = document.querySelector('.cabecalho__conteudo__pesquisa__barra');
+        
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault();  // Impede o envio do formulário
+            
+            const searchTerm = searchInput.value.toLowerCase();  // Obtém o texto da pesquisa
+            const allProductsSections = document.querySelectorAll('.conteudo > section');  // Seleciona todas as seções de produtos
+            let found = false;
+
+            // Loop por todas as seções de produtos
+            allProductsSections.forEach(section => {
+                const products = section.querySelectorAll('.conteudo__novidades__variedade h3');  // Obtém todos os nomes de produtos dentro da seção
+                let sectionContainsProduct = false;
+
+                products.forEach(product => {
+                    if (product.textContent.toLowerCase().includes(searchTerm)) {
+                        product.parentElement.style.display = 'block';  // Exibe o produto
+                        sectionContainsProduct = true;
+                    } else {
+                        product.parentElement.style.display = 'none';  // Oculta o produto
+                    }
+                });
+
+                if (sectionContainsProduct) {
+                    section.style.display = 'block';  // Exibe a seção se algum produto corresponder
+                    found = true;
+                } else {
+                    section.style.display = 'none';  // Caso contrário, esconde a seção
+                }
+            });
+
+            // Se nenhum produto for encontrado, exibe uma mensagem de alerta
+            if (!found) {
+                alert('Nenhum item encontrado!');
+            }
+        });
+
+    </script>
+
 </body>
 </html>
