@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#conteudo__novidades, #conteudo__promocoes {
+    margin: 3em;
+}
+
+.conteudo__novidades__bleizers {
+    text-align: center;
+}
+
+.conteudo__novidades__variedade {
+    margin: 1em 1.5em;
+    display: inline-block;
+}
+
+.conteudo__novidades__variedade h3 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0.3em;
+}
+
+.conteudo__novidades__variedade .preco {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.conteudo__novidades__variedade .parcelado {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+.conteudo__novidades__variedade a {
+    background-color: var(--cor-septenaria);
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.6em 2em;
+    
+    
+}
+

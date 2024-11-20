@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url("./assets/css/header.css");
+@import url("./assets/css/novidades.css");
+@import url("./assets/css/vendidos.css");
+@import url("./assets/css/carrossel.css");
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./assets/css/rodape.css');
+
+:root { /*variáveis de cores tema da página*/
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #162B40;
+    --cor-quarternaria: #D9D9D9;
+    --cor-quintenaria: #E9AAB2; 
+    --cor-sextenaria: #3A5872;
+    --cor-septenaria: #54A556;
+    --cor-hover: #BFA065;
+}
+
+* {
+    /*resetar todo stylo pré definido da css*/
+    margin: 0; 
+    padding: 0;
+    font-family: "Montserrat";
+    /**/
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/*Seção do main*/
+
+.conteudo__imagem {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0.5em;
+}
+

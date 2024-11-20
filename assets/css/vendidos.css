@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#conteudo__vendidos {
+    background-color: var(--cor-quarternaria);
+    padding: 3em;
+}
+
+.conteudo__vendidos__classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    
+}
+
+.conteudo__vendidos__classificacao img {
+    margin: 1em;
+}
+
