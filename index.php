@@ -441,14 +441,14 @@
     </main>
 
      <!-- Rodapé -->
-     <div class="footer">
-        <img src="./assets/images/logo.jpg" alt="Fashion Luar">
+    <footer>
+        <img class="rodape__logo" src="./assets/images/logo.jpg" alt="Fashion Luar">
         <p>Entre em contato conosco:<br>(XX) XXXXX-XXXX<br>email@gmail.com</p>
-        <div>
+        <div class="rodape__pagamentos">
             <p>Forma de pagamento:</p>
             <img src="./assets/images/formas_de_pagamento.webp" alt="Formas de Pagamento">
         </div>
-    </div>
+    </footer>
 
     <script>
         

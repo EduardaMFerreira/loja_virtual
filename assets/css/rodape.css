@@ -81,19 +81,30 @@
 }
 
 /* Rodapé */
-.footer {
+footer {
     background-color: #152B40;
     color: #E9AAB2;
     font-family: 'Montserrat';
-    padding: 40px;
+    padding: 1.5em;
     text-align: center;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.footer img {
+.rodape__logo {
     float: left;
     width: 60px;
     margin-bottom: -15px;
-    inline-size: 10%
-;
+    inline-size: 10%;
+}
+
+.rodape__pagamentos img {
+    width: 250px;
+}
+
+.rodape__pagamentos {
+    font-size: 14px;
+    text-align: left;
 }
