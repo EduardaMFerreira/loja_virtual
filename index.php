@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css?v=1.0">
     <title>Fashion Luar</title>
 </head>
 <body>
@@ -40,32 +40,32 @@
             <section class="conteudo__novidades__bleizers">
     
                 <div class="conteudo__novidades__variedade">
-                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_preto.png" alt="Sobretudo Preto">
+                    <img src="./assets/images/novidades/sobretudo_preto.png" alt="Sobretudo Preto">
                     <h3>Sobretudo Preto</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_branco.png" alt="Sobretudo Branco">
+                    <img src="./assets/images/novidades/sobretudo_branco.png" alt="Sobretudo Branco">
                     <h3>Sobretudo Branco</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_bege.png" alt="Sobretudo Bege">
+                    <img src="./assets/images/novidades/sobretudo_bege.png" alt="Sobretudo Bege">
                     <h3>Sobretudo Bege</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
-                    <img class="conteudo__novidades__variedade__img" src="./assets/images/novidades/sobretudo_xadrez.png" alt="Sobretudo Xadrez">
+                    <img src="./assets/images/novidades/sobretudo_xadrez.png" alt="Sobretudo Xadrez">
                     <h3>Sobretudo Xadrez</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
             </section>
 
@@ -74,9 +74,9 @@
         <section id="conteudo__vendidos">
             <h2>Mais vendidos</h2>
             <div class="conteudo__vendidos__classificacao">
-                <img src="./assets/images/mais_vendidos/vestido_de_bolinhas.jpg" alt="3º mais vendido: Vestido de bolinhas">
-                <img src="./assets/images/mais_vendidos/bleizer_azul.png" alt="1º mais vendido: Bleizer Azul">
-                <img src="./assets/images/mais_vendidos/short_dourado.jpg" alt="3º mais vendido: Short dourado">
+                <img src="./assets/images/mais_vendidos/2.png" alt="2º mais vendido: Vestido de bolinhas">
+                <img src="./assets/images/mais_vendidos/1.png" alt="1º mais vendido: Bleizer Azul">
+                <img src="./assets/images/mais_vendidos/3.png" alt="3º mais vendido: Short dourado">
             </div>
         </section>
 
@@ -89,28 +89,28 @@
                     <h3>Saia Longa Rosa</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/promocoes/camisa_de_popelina-listrado.png" alt="Popelina Listrada">
                     <h3>Popelina Listrada</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/promocoes/jaqueta_puffer.png" alt="Jaqueta Puffer">
                     <h3>Jaqueta Puffer</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/promocoes/calca_alfaiataria_bege.png" alt="Calça Alfaiataria">
                     <h3>Calça Alfaiataria</h3>
                     <p class="preco">R$ 99,99</p>
                     <p class="parcelado">ou 5X de R$ 19,99 sem juros</p>
-                    <a href="#">Comprar agora</a>
+                    <a class="comprar" href="#">Comprar agora</a>
                 </div>
             </section>
         </section>
@@ -464,36 +464,45 @@
 
     </script>
     <script>
-
         const searchForm = document.querySelector('.cabecalho__conteudo__pesquisa');
         const searchInput = document.querySelector('.cabecalho__conteudo__pesquisa__barra');
-        
-        searchForm.addEventListener('submit', function(event) {
-            event.preventDefault();  // Impede o envio do formulário
-            
-            const searchTerm = searchInput.value.toLowerCase();  // Obtém o texto da pesquisa
-            const allProductsSections = document.querySelectorAll('.conteudo > section');  // Seleciona todas as seções de produtos
+
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            const searchTerm = searchInput.value.toLowerCase(); // Obtém o texto da pesquisa
+            const allProductsSections = document.querySelectorAll('.conteudo > section'); // Seleciona todas as seções de produtos
             let found = false;
 
             // Loop por todas as seções de produtos
             allProductsSections.forEach(section => {
-                const products = section.querySelectorAll('.conteudo__novidades__variedade h3');  // Obtém todos os nomes de produtos dentro da seção
+                // Seleciona todos os produtos dentro da seção
+                let products = section.querySelectorAll('.conteudo__novidades__variedade h3');
+
+                // Caso seja a seção de vestuário, seleciona os itens de forma diferente
+                if (section.id === 'conteudo__vestuario') {
+                products = section.querySelectorAll('.item p'); // Produtos em vestuário têm nome dentro de `<p>`
+                }
+
                 let sectionContainsProduct = false;
 
                 products.forEach(product => {
                     if (product.textContent.toLowerCase().includes(searchTerm)) {
-                        product.parentElement.style.display = 'block';  // Exibe o produto
+                        // Para produtos em vestuário, é necessário ajustar a exibição do elemento pai
+                        const productContainer = product.closest('.item') || product.parentElement;
+                        productContainer.style.display = 'block'; // Exibe o produto
                         sectionContainsProduct = true;
                     } else {
-                        product.parentElement.style.display = 'none';  // Oculta o produto
+                        const productContainer = product.closest('.item') || product.parentElement;
+                        productContainer.style.display = 'none'; // Oculta o produto
                     }
                 });
 
                 if (sectionContainsProduct) {
-                    section.style.display = 'block';  // Exibe a seção se algum produto corresponder
-                    found = true;
+                section.style.display = 'block'; // Exibe a seção se algum produto corresponder
+                found = true;
                 } else {
-                    section.style.display = 'none';  // Caso contrário, esconde a seção
+                section.style.display = 'none'; // Caso contrário, esconde a seção
                 }
             });
 
@@ -502,8 +511,6 @@
                 alert('Nenhum item encontrado!');
             }
         });
-
     </script>
-
 </body>
 </html>

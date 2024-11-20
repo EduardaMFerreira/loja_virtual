@@ -1,13 +1,10 @@
-<style>
- /* Barra de título */
+/* Barra de título */
  .header {
-    background-color: #162B40;
+    background-color: #16401c;
     color: #162B40;
     font-family: 'Montserrat';
     font-size: 300px;
     padding: 200px;
-   
-    
 }
 
 .titulo{
@@ -100,7 +97,3 @@
     inline-size: 10%
 ;
 }
-
-
-
-</style>
