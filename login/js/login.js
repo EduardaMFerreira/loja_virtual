@@ -1,4 +1,3 @@
-
 // Função para alternar a visibilidade da senha no campo de senha
 const togglePassword = document.getElementById('toggle-password');
 const passwordField = document.getElementById('senha');

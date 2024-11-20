@@ -1,4 +1,3 @@
-
 // Funcionalidade de mostrar/esconder senha para o campo 'senha'
 const toggleSenha = document.getElementById('toggle-senha');
 const senhaField = document.getElementById('senha');
