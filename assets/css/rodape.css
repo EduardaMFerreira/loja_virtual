@@ -9,12 +9,11 @@
 .titulo {
     color: var(--cor-quintenaria);
     background-color: var(--cor-terciaria);
-    text-align: center;
     text-transform: uppercase; /*deixar o texto todo maiúsculo*/
-    font-size: 25px;
-    font-weight: 600;
-    padding: 0.7em 0 0.5em 0;
-    margin: 3em 0 1em;
+    font-size: 27px;
+    font-weight: 450;
+    padding: 0.7em 0 0.5em 3em;
+    margin-bottom: 0.5em;
 }
 
 /* Container de rolagem */
@@ -25,9 +24,9 @@
 }
 
 .scroll-container h3{
-    padding-left: 1em;
-    font-size: 1.5em;
-    font-weight: 400;
+    padding-left: 2em;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 /* Container das imagens de produtos */
@@ -45,7 +44,7 @@
     text-align: center;
     background-color: #ffffff;
     border: 1px solid #ccc;
-    margin: 1em;
+    margin: 1.5em 3em;
     width: 15%; /* Aproximadamente 5 itens por linha */
     flex-shrink: 0; /* Garante que os itens não diminuam */
     box-sizing: border-box; /* Garante que a largura respeite o padding */
