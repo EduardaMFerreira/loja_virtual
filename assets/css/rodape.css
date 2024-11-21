@@ -1,62 +1,89 @@
 /* Barra de título */
- .header {
-    background-color: #16401c;
-    color: #162B40;
-    font-family: 'Montserrat';
-    font-size: 300px;
-    padding: 200px;
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
 }
 
-.titulo{
-    background-color: #162B40;
-    color: #E9AAB2;
-    font-family: 'Montserrat';
-    font-size: 40px;
-    text-align: left;
-
+.titulo {
+    color: var(--cor-quintenaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    text-transform: uppercase; /*deixar o texto todo maiúsculo*/
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0.7em 0 0.5em 0;
+    margin: 3em 0 1em;
 }
 
-
-/* Container de cada linha com rolagem horizontal */
+/* Container de rolagem */
 .scroll-container {
     position: relative;
     overflow: hidden;
     padding: 20px;
 }
 
-/* Container das imagens de produtos com rolagem horizontal */
-.product-row {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+.scroll-container h3{
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
+/* Container das imagens de produtos */
+.product-row {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 10px; /* Espaço entre os itens */
+    padding-left: 40px;  /* Adiciona espaçamento para o botão da esquerda */
+    padding-right: 40px; /* Adiciona espaçamento para o botão da direita */
+    position: relative; /* Garantir que o overflow seja controlado */
+}
 
-
-/* Estilos para os itens de produto */
 .item {
     text-align: center;
     background-color: #ffffff;
-    border: 1px dotted #ffffff;;
-    padding: 50px;
-    min-width: 160px;
-    margin-right: 110px;
-    margin-left: 1.85%;
+    border: 1px solid #ccc;
+    margin: 1em;
+    width: 15%; /* Aproximadamente 5 itens por linha */
+    flex-shrink: 0; /* Garante que os itens não diminuam */
+    box-sizing: border-box; /* Garante que a largura respeite o padding */
+    overflow: hidden; /* Garante que o item não ultrapasse seu contêiner */
 }
 
 .item img {
-    width: 100%;
+    width: 100%; /* Ajusta para caber no item */
     height: auto;
+    max-width: 100%; /* Evita que a imagem ultrapasse o limite do item */
+}
+
+.item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item p span {
+    font-weight: 500;
 }
 
 .button {
-    background-color: #162B40;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
+    background-color: var(--cor-septenaria);
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.01em;
+    font-weight: 500;
+    padding: 0.6em 1.727em;
     display: inline-block;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #1a3a5d;
 }
 
 /* Botões de navegação */
@@ -64,21 +91,64 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(119, 117, 117, 0.247);
-    color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: gray;
     border: none;
-    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1; /* Garante que as setas fiquem sobre os itens */
 }
 
 .nav-button.left {
-    left: 2px;
+    left: 0; /* Posiciona à esquerda */
 }
 
 .nav-button.right {
-    right: 2px;
+    right: 0; /* Posiciona à direita */
 }
+
+.nav-button:hover {
+    color: darkgray; /* Cor ao passar o mouse */
+}
+
+
+/* Esconde a barra de rolagem */
+.product-row {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 20px;
+    scrollbar-width: none; /* Para navegadores compatíveis (Firefox) */
+}
+
+.product-row::-webkit-scrollbar {
+    display: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .item {
+        min-width: 150px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .nav-button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
 
 /* Rodapé */
 footer {
@@ -91,6 +161,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 3em;
 }
 
 .rodape__logo {

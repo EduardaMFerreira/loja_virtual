@@ -38,11 +38,12 @@
     font-size: 20px;
     font-weight: 500;
     padding: 0.6em 2em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .comprar:hover {
-    background-color: #4f9450;
-    box-shadow: 1px 1px 3px 0px rgb(127, 127, 127);
+    background-color: #1a3a5d;
 }
 
 

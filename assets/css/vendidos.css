@@ -18,3 +18,14 @@
 }
 
 
+/* Estilo base para as imagens */
+.conteudo__vendidos__classificacao img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito de zoom e sombra */
+    cursor: pointer;
+}
+
+/* Zoom e sombra ao passar o mouse */
+.conteudo__vendidos__classificacao img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
