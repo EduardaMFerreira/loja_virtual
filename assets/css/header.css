@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /*Seção do cabeçalho*/
-
 .cabecalho__conteudo {
     background-color: var(--cor-terciaria);
     display: flex;
