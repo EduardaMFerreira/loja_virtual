@@ -41,7 +41,7 @@
                                 </ul>
                                 <p class="total">Total: R$ <span id="total">0,00</span></p>
                                 <div id="empty-cart-message" class="carrinho-vazio" style="display: none;">
-                                    <img src="images/sacola-de-compras.png" alt="Carrinho Vazio">
+                                    <img src="imagens/sacola-de-compras .png" alt="Carrinho Vazio">
                                     <p class="frase-abaixo-imagem">Nenhum item no momento</p>
                                 </div>
                             </div>
