@@ -85,3 +85,311 @@
 
     color: var(--cor-hover);
 }
+
+/* Estilo do ícone do carrinho */
+.cabecalho__conteudo__acesso__imagem {
+    width: 40px;
+    height: 40px;
+}
+
+/* Remove a seta do dropdown apenas para o ícone da sacola */
+#cart-dropdown-toggle::after {
+    display: none; /* Remove a seta */
+    position: relative; /* Isso fará com que o menu seja posicionado em relação ao ícone */
+}
+/* Estilo para o menu de carrinho */
+.dropdown-menu {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 400px; /* Largura mínima maior */
+    max-width: 600px; /* Largura máxima maior */
+    height: 88vh; /* Altura automática para o menu */
+    position: absolute;
+    top: 100%;
+    right: 30px; /* Pode ajustar o alinhamento da direita */
+    z-index: 1000;
+    display: none;
+}
+
+/* Estilos do voltar-container */
+.voltar-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    margin-bottom: 20px;
+    color: #333333;
+    padding-left: 20px; /* Adiciona espaçamento à esquerda para mover mais para a direita */
+}
+
+/* Estilos para a seta */
+.voltar-container .fa-arrow-left {
+    font-size: 1.5em;
+    margin-right: 15px; /* Espaço entre a seta e o texto */
+    cursor: pointer; /* Faz a seta parecer clicável */
+    color: #888888;
+    margin-top: 2px;
+}
+
+.voltar-texto {
+    font-size: 1.1em;
+}
+
+
+/* Alinha o texto da imagem e outros elementos dentro do container à esquerda */
+.carrinho-vazio img {
+    position: relative;
+    left: 80px;          /* Move a imagem para a direita a partir de sua posição original */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 110px;
+}
+
+
+/* Estilo para o texto de itens */
+.item-cor {
+   color: #888888;
+}
+
+/* Estilos para os itens do carrinho */
+.itens {
+    padding-left: 30px; /* Aumenta a distância dos itens do canto esquerdo */
+}
+
+
+/* Ajustando o total */
+.total {
+    padding-left: 2px; /* Mantém o padding à esquerda mais próximo */
+    margin-top: -20px; /* Ajuste negativo para subir mais o total em relação aos itens */
+    margin-bottom: 0px; /* Remover margem inferior para aproximar ainda mais */
+}
+
+
+
+/* Estilo para o texto abaixo da imagem */
+.frase-abaixo-imagem {
+    margin-top: 10px;          /* Espaço entre a imagem e o texto */
+    display: block;            /* Garante que o texto ocupe a linha inteira */
+    position: relative;        /* Define a posição relativa para mover a frase */
+    left: 60px;               /* Move a frase 150px para a direita */
+    white-space: nowrap;       /* Impede que a frase quebre a linha */
+}
+
+
+/* Estilos dos itens do carrinho */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+/* Estilo do total */
+#total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilo para a sobreposição */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+    z-index: 998; /* Fica atrás do menu, mas acima do conteúdo */
+    display: none; /* Inicialmente invisível */
+    cursor: pointer; /* Para indicar que pode ser clicado para fechar */
+}
+
+.remove-item-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: 200px;
+    font-size: 14px;
+}
+
+.remove-item-btn i {
+    margin-right: 5px;
+}
+
+.cart-item {
+    display: flex; /* Faz com que os itens dentro deste container fiquem lado a lado */
+
+}
+
+/* Estilos para o menu de login */
+#login-items-list {
+    /* Estilo similar ao carrinho */
+    display: none;
+    padding: 10px;
+}
+
+#login-items-list .itens {
+    padding: 10px;
+}
+
+#logout-btn {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Remove a seta padrão do dropdown */
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+
+/* Estilo do modal */
+.login-modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro e transparente */
+}
+
+/* Conteúdo do modal */
+.login-modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    position: relative; /* Para poder posicionar o botão de fechar */
+}
+
+/* Estilo do botão de fechar */
+.close, .fechar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus, .fechar:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo dos campos de input e botão */
+.login-modal input[type="email"],
+.login-modal input[type="password"],
+.login-modal input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-modal button,
+.login-modal input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-modal button:hover,
+.login-modal input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do overlay (camada de fundo transparente) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Estilo para o ícone de fechar */
+.fechar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para o modal (garantir que fique no centro da tela) */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* O conteúdo do modal */
+.login-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+}
+
+/* Camada de sobreposição */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.titulo {
+    background-color: transparent !important;  /* Garantindo que o fundo será transparente, mesmo que outras regras tentem sobrescrever */
+    color: #CC808C !important;                    /* Cor do texto, também forçando a cor */
+    font-size: 28px !important;                 /* Tamanho da fonte, forçado com !important */
+    margin-bottom: 20px !important;             /* Espaçamento abaixo */
+    padding: 0 !important;                      /* Remove qualquer padding extra */
+    font-size: 30px;
+}
+
+
