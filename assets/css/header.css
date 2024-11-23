@@ -101,8 +101,9 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-width: 600px; /* Largura mínima maior */
-    max-width: 600px; /* Largura máxima maior */
+    width: 380px !important; /* Força a largura */
+    min-width: 380px !important;
+    max-width: 380px !important;
     height: 88vh; /* Altura automática para o menu */
     position: absolute;
     top: 100%;
@@ -141,10 +142,10 @@
 /* Alinha o texto da imagem e outros elementos dentro do container à esquerda */
 .carrinho-vazio img {
     position: relative;
-    left: 80px;          /* Move a imagem para a direita a partir de sua posição original */
+    left: 70px;          /* Move a imagem para a direita a partir de sua posição original */
     max-width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top: 110px;
 }
 
@@ -171,10 +172,10 @@
 
 /* Estilo para o texto abaixo da imagem */
 .frase-abaixo-imagem {
-    margin-top: 10px;          /* Espaço entre a imagem e o texto */
+    margin-bottom: 10px;          /* Espaço entre a imagem e o texto */
     display: block;            /* Garante que o texto ocupe a linha inteira */
     position: relative;        /* Define a posição relativa para mover a frase */
-    left: 60px;               /* Move a frase 150px para a direita */
+    left: 50px;               /* Move a frase 150px para a direita */
     white-space: nowrap;       /* Impede que a frase quebre a linha */
 }
 
@@ -253,8 +254,6 @@
     display: none;
 }
 
-
-
 /* Estilo do modal */
 .login-modal {
     display: none;
@@ -317,9 +316,80 @@
     cursor: pointer;
 }
 
+/* Estilo para o container da senha */
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para o campo de senha */
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Espaço para o ícone de olho */
+    margin: 4px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333333;
+}
+
+.senha-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); /* Alinha verticalmente */
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+}
+
+/* Estilo para o container do campo de senha */
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para o campo de senha */
+input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Espaço para o ícone de olho */
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+}
+
+/* Estilo para o ícone do olho (inicialmente fechado) */
+.senha-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); /* Alinha verticalmente o ícone */
+    cursor: pointer;
+    color: #999; /* Cor do ícone fechado */
+    font-size: 18px;
+}
+
+/* Ícone de olho fechado - quando a senha está oculta */
+.senha-container .eye-closed {
+    display: block;
+}
+
+/* Ícone de olho aberto - quando a senha está visível (será controlado via JavaScript) */
+.senha-container .eye-open {
+    display: none; /* Inicialmente oculto */
+}
+
+/* Quando o olho for clicado e a senha for visível, o ícone muda */
+input[type="text"] {
+    font-size: 1em; /* Caso a senha esteja visível, muda para o tipo texto */
+}
+
+
 .login-modal button:hover,
 .login-modal input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #162B40;
 }
 
 /* Estilo do overlay (camada de fundo transparente) */
@@ -375,6 +445,8 @@
     position: relative;
 }
 
+
+
 /* Camada de sobreposição */
 .overlay {
     position: fixed;
@@ -394,5 +466,21 @@
     padding: 0 !important;                      /* Remove qualquer padding extra */
     font-size: 30px;
 }
+
+.btn-buy {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-buy:hover {
+    background-color: #45a049;
+}
+
 
 

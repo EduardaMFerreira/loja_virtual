@@ -25,12 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar se os campos foram preenchidos
     if (empty($email) || empty($senha)) {
         $_SESSION['erro'] = "E-mail e senha são obrigatórios!";
-        header("Location: login.html");
+        header("Location: index.php");
         exit();
     }
 
     // Verificar se o e-mail existe no banco de dados
-    $stmt = $conn->prepare("SELECT id, senha FROM usuarios WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id, nome, senha FROM usuarios WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -38,24 +38,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->num_rows == 0) {
         // E-mail não encontrado
         $_SESSION['erro'] = "E-mail ou senha incorretos!";
-        header("Location: login.html");
+        header("Location: index.php");
         exit();
     }
 
-    // Recuperar o hash da senha do banco de dados
-    $stmt->bind_result($id, $senha_hash);
+    // Recuperar o nome e o hash da senha do banco de dados
+    $stmt->bind_result($id, $nome, $senha_hash);
     $stmt->fetch();
 
     // Verificar se a senha fornecida corresponde à senha armazenada
     if (password_verify($senha, $senha_hash)) {
         // Senha correta - iniciar sessão do usuário
         $_SESSION['id'] = $id; // Armazenar o ID do usuário na sessão
-        $_SESSION['sucesso'] = "Login realizado com sucesso!";
-        header("Location: dashboard.php"); // Página de destino após login (exemplo: dashboard)
+        $_SESSION['nome'] = $nome; // Armazenar o nome do usuário na sessão
+        $_SESSION['sucesso'] = "Login realizado com sucesso! Bem-vindo, $nome!"; // Mensagem de sucesso
+        header("Location: index.php"); // Página de destino após login (index.php)
+        exit();
     } else {
         // Senha incorreta
         $_SESSION['erro'] = "E-mail ou senha incorretos!";
-        header("Location: login.html");
+        header("Location: index.php");
+        exit();
     }
 
     // Fechar a conexão com o banco

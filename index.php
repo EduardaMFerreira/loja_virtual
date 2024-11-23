@@ -48,8 +48,9 @@
                                     <!-- Itens do carrinho serão listados aqui -->
                                 </ul>
                                 <p class="total">Total: R$ <span id="total">0,00</span></p>
+                                <button id="buy-button" class="btn-buy" style="display: none;" onclick="buyItems()">Comprar</button> <!-- Botão de compra -->
                                 <div id="empty-cart-message" class="carrinho-vazio" style="display: none;">
-                                    <img src="imagens/sacola-de-compras .png" alt="Carrinho Vazio">
+                                    <img src="assets/images/sacola-de-compras .png" alt="Carrinho Vazio">
                                     <p class="frase-abaixo-imagem">Nenhum item no momento</p>
                                 </div>
                             </div>
@@ -63,8 +64,9 @@
                     <a href="javascript:void(0)" onclick="openLoginMenu()">
                         <img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/perfil.png" title="Bolsa de compras" alt="Bolsa de compras">
                     </a>
-
+                    
                     <!-- Modal de login (inicialmente oculto) -->
+                    
                     <div id="login-modal" class="login-modal" style="display: none;">
                         <div class="login-modal-content">
                             <!-- Ícone de fechar -->
@@ -80,15 +82,20 @@
                                         <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
                                         <i class="fa fa-eye" id="toggle-password"></i>
                                     </div>
+
                                     <a href="#">Esqueci minha senha</a>
-                                    <input type="submit" name="enviar" value="Acessar" />
+                                    <!-- Botão de submit -->
+                                    <input type="submit" name="enviar" value="Acessar" id="enviarBtn" />
                                     <p>Não tem uma conta?<a href="cadastro.php">Cadastre-se</a></p>
+                                    <!-- Placeholder para o alerta -->
+                                    <div id="liveAlertPlaceholder"></div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
 
             <!-- Navegação de links -->
             <nav class="cabecalho__conteudo__navegacao">
@@ -630,6 +637,7 @@ function updateCartUI() {
     const itemCount = document.getElementById('item-count');
     const cartContainer = document.getElementById('cart-items-list'); // Contêiner do carrinho
     const emptyCartMessage = document.getElementById('empty-cart-message'); // Div da mensagem de carrinho vazio
+    const buyButton = document.getElementById('buy-button'); // Botão de compra
 
     // Limpa o conteúdo atual da lista de itens do carrinho
     cartItemsList.innerHTML = '';
@@ -658,6 +666,9 @@ function updateCartUI() {
 
         // Esconde a mensagem e imagem de carrinho vazio
         emptyCartMessage.style.display = 'none';
+         // Exibe o botão de compra
+         buyButton.style.display = 'block';
+
     } else {
         // Remove a classe quando o carrinho está vazio
         cartContainer.classList.remove('cart-not-empty');
@@ -668,6 +679,10 @@ function updateCartUI() {
 
         // Exibe a mensagem e imagem de carrinho vazio
         emptyCartMessage.style.display = 'block';
+
+        // Esconde o botão de compra
+        buyButton.style.display = 'none';
+    
     }
 }
 
@@ -682,6 +697,28 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         addToCart(product, price);
     });
 });
+
+// Exibe o botão de compra se houver itens no carrinho
+showBuyButton();
+
+
+// Função para exibir ou esconder o botão de compra
+function showBuyButton() {
+    let itemCount = document.getElementById('item-count').textContent;
+    let buyButton = document.getElementById('buy-button');
+
+    // Se houver itens no carrinho, exibe o botão
+    if (parseInt(itemCount) > 0) {
+        buyButton.style.display = 'block';
+    } else {
+        buyButton.style.display = 'none';
+    }
+}
+
+// Função de compra (simplesmente exibe um alerta neste exemplo)
+function buyItems() {
+    alert('Compra realizada com sucesso!');
+}
 
 // Função para carregar o carrinho ao iniciar a página
 function loadCartFromStorage() {
@@ -699,6 +736,7 @@ function loadCartFromStorage() {
 
 // Carrega o carrinho do localStorage ao carregar a página
 window.onload = loadCartFromStorage;
+
 
 // Função para abrir o modal de login
 function openLoginMenu() {
@@ -730,7 +768,35 @@ window.addEventListener('click', function(event) {
         closeLoginMenu();
     }
 });
+
+// Funcionalidade de mostrar/esconder senha para o campo 'senha'
+const toggleSenha = document.getElementById('toggle-password');
+        const senhaField = document.getElementById('senha');
+        toggleSenha.addEventListener('click', function () {
+            const type = senhaField.type === 'password' ? 'text' : 'password';
+            senhaField.type = type;
+            this.classList.toggle('fa-eye-slash');
+        });
+
+
+        document.getElementById('enviarBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede que o formulário seja enviado antes de mostrar o alerta
+
+    // Cria um alerta personalizado
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+    const alert = document.createElement('div');
+    alert.classList.add('alert', 'alert-success');
+    alert.setAttribute('role', 'alert');
+    alert.textContent = 'Login realizado com sucesso! Bem-vindo!';  // Mensagem de sucesso
+    alertPlaceholder.appendChild(alert);
+
+    // Esconde o modal e a sobreposição após exibir o alerta
+    setTimeout(() => {
+        closeLoginMenu(); // Fecha o modal e a sobreposição
+    }, 2000);  // Aguarda 2 segundos para exibir o alerta e depois fecha
+}); // Fim da função de evento
 </script>
+
 
     <!-- Importa a biblioteca Swiper (versão 11) para permitir o uso de carrosséis de slides e outras funcionalidades interativas -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

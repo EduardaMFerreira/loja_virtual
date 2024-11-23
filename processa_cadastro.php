@@ -27,14 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar se todos os campos foram preenchidos
     if (empty($nome) || empty($email) || empty($senha) || empty($confirma_senha)) {
         $_SESSION['erro'] = "Todos os campos são obrigatórios!";
-        header("Location: cadastro.html");
+        header("Location: cadastro.php");
         exit();
     }
 
     // Verificar se as senhas são iguais
     if ($senha !== $confirma_senha) {
         $_SESSION['erro'] = "As senhas não coincidem!";
-        header("Location: cadastro.html");
+        header("Location: cadastro.php");
         exit();
     }
 
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->num_rows > 0) {
         // E-mail já cadastrado
         $_SESSION['erro'] = "Este e-mail já está em uso!";
-        header("Location: cadastro.html");
+        header("Location: cadastro.php");
         exit();
     }
 
@@ -63,11 +63,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->affected_rows > 0) {
         // Cadastro bem-sucedido
         $_SESSION['sucesso'] = "Cadastro realizado com sucesso! Você já pode fazer login.";
-        header("Location: ../login/login.html");
+        header("Location: index.php"); // Redireciona para a página inicial com a mensagem de sucesso
+        exit();
     } else {
         // Erro ao inserir os dados
         $_SESSION['erro'] = "Houve um erro ao cadastrar sua conta. Tente novamente!";
-        header("Location: cadastro.html");
+        header("Location: cadastro.php");
+        exit();
     }
 
     // Fechar a conexão com o banco

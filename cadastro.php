@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="./style.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="js/cadastro.js" defer></script>
-
 </head>
 <body>
     <div class="container">
@@ -15,20 +14,7 @@
             <i class="fa fa-times fechar" id="fechar-cadastro"></i>
             <big class="titulo">Cadastro</big>
             <p class="descrição">Crie sua conta preenchendo os campos abaixo.</p>
-
-            <!-- Exibir mensagens de erro ou sucesso -->
-            <?php if (isset($_SESSION['erro'])): ?>
-                <div class="mensagem erro">
-                    <?php echo $_SESSION['erro']; ?>
-                </div>
-                <?php unset($_SESSION['erro']); ?>
-            <?php endif; ?>
-            <?php if (isset($_SESSION['sucesso'])): ?>
-                <div class="mensagem sucesso">
-                    <?php echo $_SESSION['sucesso']; ?>
-                </div>
-                <?php unset($_SESSION['sucesso']); ?>
-            <?php endif; ?>
+    </div>
 
             <form class="cadastro-form" action="processa_cadastro.php" method="post">
                 <label for="nome">Nome:</label>
