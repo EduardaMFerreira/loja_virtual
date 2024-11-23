@@ -1,180 +1,28 @@
-/* Barra de título */
-.header {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    padding: 20px;
-    text-align: center;
-}
-
-.titulo {
-    color: var(--cor-quintenaria);
-    background-color: var(--cor-terciaria);
-    text-transform: uppercase; /*deixar o texto todo maiúsculo*/
-    font-size: 27px;
-    font-weight: 450;
-    padding: 0.7em 0 0.5em 3em;
-    margin-bottom: 0.5em;
-}
-
-/* Container de rolagem */
-.scroll-container {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.scroll-container h3{
-    padding-left: 2em;
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-/* Container das imagens de produtos */
-.product-row {
-    display: flex;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    gap: 10px; /* Espaço entre os itens */
-    padding-left: 40px;  /* Adiciona espaçamento para o botão da esquerda */
-    padding-right: 40px; /* Adiciona espaçamento para o botão da direita */
-    position: relative; /* Garantir que o overflow seja controlado */
-}
-
-.item {
-    text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    margin: 1.5em 3em;
-    width: 15%; /* Aproximadamente 5 itens por linha */
-    flex-shrink: 0; /* Garante que os itens não diminuam */
-    box-sizing: border-box; /* Garante que a largura respeite o padding */
-    overflow: hidden; /* Garante que o item não ultrapasse seu contêiner */
-}
-
-.item img {
-    width: 100%; /* Ajusta para caber no item */
-    height: auto;
-    max-width: 100%; /* Evita que a imagem ultrapasse o limite do item */
-}
-
-.item p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-.item p span {
-    font-weight: 500;
-}
-
-.button {
-    background-color: var(--cor-septenaria);
-    color: var(--cor-secundaria);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.01em;
-    font-weight: 500;
-    padding: 0.6em 1.727em;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: #1a3a5d;
-}
-
-/* Botões de navegação */
-.nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: gray;
-    border: none;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0 10px;
-    z-index: 1; /* Garante que as setas fiquem sobre os itens */
-}
-
-.nav-button.left {
-    left: 0; /* Posiciona à esquerda */
-}
-
-.nav-button.right {
-    right: 0; /* Posiciona à direita */
-}
-
-.nav-button:hover {
-    color: darkgray; /* Cor ao passar o mouse */
-}
-
-
-/* Esconde a barra de rolagem */
-.product-row {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    gap: 20px;
-    scrollbar-width: none; /* Para navegadores compatíveis (Firefox) */
-}
-
-.product-row::-webkit-scrollbar {
-    display: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .item {
-        min-width: 150px;
-    }
-
-    .titulo {
-        font-size: 1.5rem;
-    }
-
-    .button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    .nav-button {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
-
-
-/* Rodapé */
 footer {
-    background-color: #152B40;
-    color: #E9AAB2;
-    font-family: 'Montserrat';
-    padding: 1.5em;
-    text-align: center;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 3em;
+    background-color: #152B40; /* Define o fundo do rodapé como uma cor escura, #152B40 */
+    color: #E9AAB2; /* Define a cor do texto como um tom suave de rosa (#E9AAB2) */
+    font-family: 'Montserrat'; /* Define a fonte utilizada no rodapé como Montserrat */
+    padding: 1.5em; /* Adiciona espaçamento interno de 1.5em em todos os lados do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    display: flex; /* Aplica o layout flexível para organizar os itens dentro do rodapé */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-around; /* Distribui os itens de forma espaçada ao longo do espaço disponível */
+    margin-top: 3em; /* Adiciona margem superior de 3em, afastando o rodapé do conteúdo anterior */
 }
 
 .rodape__logo {
-    float: left;
-    width: 60px;
-    margin-bottom: -15px;
-    inline-size: 10%;
+    float: left; /* Faz com que o logo flutue à esquerda do rodapé */
+    width: 60px; /* Define a largura do logo como 60px */
+    margin-bottom: -15px; /* Aplica uma margem negativa na parte inferior do logo para ajustá-lo verticalmente */
+    inline-size: 10%; /* Define a largura do logo como 10% do espaço disponível, ajustando sua responsividade */
 }
 
 .rodape__pagamentos img {
-    width: 250px;
+    width: 250px; /* Define a largura das imagens dentro de rodape__pagamentos como 250px */
 }
 
 .rodape__pagamentos {
-    font-size: 14px;
-    text-align: left;
+    font-size: 14px; /* Define o tamanho da fonte dentro da seção de pagamentos como 14px */
+    text-align: left; /* Alinha o texto da seção de pagamentos à esquerda */
 }
