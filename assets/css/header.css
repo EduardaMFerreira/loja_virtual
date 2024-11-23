@@ -1,86 +1,86 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação do arquivo como UTF-8 */
 
 /*Seção do cabeçalho*/
 .cabecalho__conteudo {
-    background-color: var(--cor-terciaria);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    height: 5em;
+    background-color: var(--cor-terciaria); /* Cor de fundo da área do cabeçalho */
+    display: flex; /* Utiliza Flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-evenly; /* Distribui os itens de forma igual ao longo do espaço disponível */
+    padding-top: 15px; /* Adiciona espaçamento acima do conteúdo */
+    height: 5em; /* Define a altura do cabeçalho */
 }
 
 .cabecalho__conteudo__imagem {
-    background-color: var(--cor-terciaria);
-    width: 9em;
+    background-color: var(--cor-terciaria); /* Cor de fundo para a imagem no cabeçalho */
+    width: 9em; /* Define a largura da imagem */
     
 }
 
 .cabecalho__conteudo__pesquisa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
+    display: flex; /* Utiliza Flexbox para organizar os elementos dentro da área de pesquisa */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 60%; /* Define a largura da área de pesquisa como 60% do contêiner */
 }
 
 .cabecalho__conteudo__pesquisa__lupa {
-    padding: 9px 15px;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 8px 0px 0px 8px;
+    padding: 9px 15px; /* Define o espaçamento interno da lupa (ícone de busca) */
+    background-color: #FFFFFF; /* Define a cor de fundo da lupa como branca */
+    border: none; /* Remove qualquer borda da lupa */
+    border-radius: 8px 0px 0px 8px; /* Arredonda os cantos esquerdo e superior da lupa */
 }
 
 .cabecalho__conteudo__pesquisa__lupa img {
-    width: 27px;
+    width: 27px; /* Define a largura da imagem (ícone de lupa) dentro da barra de pesquisa */
 }
 
 .cabecalho__conteudo__pesquisa__barra {
-    border: none;
-    width: 55rem; 
-    height: 3rem;
-    border-radius: 0px 8px 8px 0px;
-    font-size: 0.9em;
+    border: none; /* Remove a borda da barra de pesquisa */
+    width: 55rem; /* Define a largura da barra de pesquisa */
+    height: 3rem; /* Define a altura da barra de pesquisa */
+    border-radius: 0px 8px 8px 0px; /* Arredonda os cantos direito e inferior da barra de pesquisa */
+    font-size: 0.9em; /* Define o tamanho da fonte na barra de pesquisa */
 }  
 
 .cabecalho__conteudo__acesso {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0px 14px;
+    display: flex; /* Utiliza Flexbox para organizar os ícones de acesso */
+    align-items: center; /* Alinha verticalmente os ícones de acesso ao centro */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 1.5rem; /* Cria um espaçamento de 1.5rem entre os ícones de acesso */
+    padding: 0px 14px; /* Adiciona espaçamento à esquerda e à direita */
 }
 
 .cabecalho__conteudo__acesso__imagem {
-    width: 26px;
-    padding: 10px;
+    width: 26px; /* Define a largura dos ícones de acesso */
+    padding: 10px; /* Adiciona espaçamento interno aos ícones */
 }
 
 .cabecalho__conteudo__acesso__imagem:hover {
-    background-color: var(--cor-sextenaria);
-    border-radius: 25%;
+    background-color: var(--cor-sextenaria); /* Altera a cor de fundo quando o ícone de acesso é hoverizado */
+    border-radius: 25%; /* Adiciona um arredondamento circular aos ícones ao passar o mouse */
 }
 
 .cabecalho__conteudo__navegacao{
-    background-color: var(--cor-terciaria);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3%;
+    background-color: var(--cor-terciaria); /* Cor de fundo da área de navegação */
+    display: flex; /* Utiliza Flexbox para organizar os links de navegação */
+    align-items: center; /* Alinha verticalmente os links ao centro */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 3%; /* Cria um espaçamento de 3% entre os links de navegação */
 }
 
 .cabecalho__conteudo__navegacao__link {
-    background-color: var(--cor-terciaria);
-    color: var(--cor-secundaria);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    padding-top: 6px;
-    font-size: 0.9rem;
+    background-color: var(--cor-terciaria); /* Cor de fundo dos links de navegação */
+    color: var(--cor-secundaria); /* Cor do texto dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: flex; /* Utiliza Flexbox para alinhar o conteúdo dentro do link */
+    align-items: center; /* Alinha verticalmente o conteúdo do link ao centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do link */
+    padding: 0.5rem; /* Adiciona espaçamento ao redor do conteúdo do link */
+    padding-top: 6px; /* Adiciona um pouco mais de espaçamento acima do conteúdo do link */
+    font-size: 0.9rem; /* Define o tamanho da fonte do link */
 }
 
 .cabecalho__conteudo__navegacao__link:hover {
 
-    color: var(--cor-hover);
+    color: var(--cor-hover); /* Altera a cor do texto para o valor da variável `--cor-hover` ao passar o mouse */
 }

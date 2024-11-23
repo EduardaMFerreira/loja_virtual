@@ -3,23 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Inclui a folha de estilo principal com a versão especificada (para controle de cache) -->
         <link rel="stylesheet" href="./style.css?v=1.0">
-        <script src="./assets/js/carrossel.js" defer></script>
-        <script src="./assets/js/pesquisa.js" defer></script>
-        <script src="./assets/js/vendidos.js" defer></script>
+        <!-- Scripts JavaScript do site, carregados de forma assíncrona com "defer" para não bloquear o carregamento da página -->
+        <script src="./assets/js/carrossel.js" defer></script> 
+        <script src="./assets/js/pesquisa.js" defer></script> 
+        <script src="./assets/js/vendidos.js" defer></script> 
+        <!-- Inclui o Bootstrap, framework de estilo CSS para layout e componentes -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <!-- Link para o Font Awesome (para os ícones) -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <!-- Link  -->
+        <!-- Inclui o CSS do Swiper (uma biblioteca de carrossel e slides) -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <title>Fashion Luar</title>
     </head>
     <body>
         <header class="cabecalho">
             <section class="cabecalho__conteudo">
+                <!-- Logo da loja com link para a página inicial -->
                 <a href="index.php"><img class="cabecalho__conteudo__imagem" src="./assets/images/logo.jpg" alt="Logo da loja"></a>
 
+                <!-- Formulário de pesquisa -->
                 <form class="cabecalho__conteudo__pesquisa" action="#" method="GET">
                     <button class="cabecalho__conteudo__pesquisa__lupa"><img src="./assets/images/icons/lupa.png" alt="Lupa de pesquisa"></button>
                     <input class="cabecalho__conteudo__pesquisa__barra" type="search" name="pesquisa" placeholder="Digite o item desejado">
@@ -32,6 +37,7 @@
                             <img class="cabecalho__conteudo__acesso__imagem" src="./assets/images/icons/sacola_compras.png" title="Bolsa de compras" alt="Bolsa de compras">
                         </a>
                         <ul id="cart-items-list" class="dropdown-menu" style="display: none;">
+                            <!-- Exibe itens no carrinho -->
                             <div class="voltar-container">
                                 <i class="fa fa-arrow-left voltar" onclick="goBack()"></i>
                                 <span class="voltar-texto">Voltar</span>
@@ -83,6 +89,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Navegação de links -->
             <nav class="cabecalho__conteudo__navegacao">
                 <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__novidades">Novidades</a>
                 <a class="cabecalho__conteudo__navegacao__link" href="#conteudo__vendidos">Mais Vendidos</a>
@@ -92,13 +100,17 @@
     </header>
 
     <main class="conteudo">
+
+        <!-- Banner principal da loja -->
         <section>
             <img class="conteudo__imagem" src="./assets/images//Banner Paisagem Loja de Roupas Masculinas Criativo Azul e Rosa Pastel .jpg" alt="Representação de atrativos">
-        </section> 
+        </section>
+        
+        <!-- Seção de novidades -->
         <section id="conteudo__novidades">
             <h2>Novidades</h2>
             <section class="conteudo__novidades__bleizers">
-    
+                <!-- Produtos em novidades (Sobretudos) -->
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/novidades/sobretudo_preto.png" alt="Sobretudo Preto">
                     <h3>Sobretudo Preto</h3>
@@ -107,6 +119,8 @@
                     <!--adicionar ao carrinho -->
                     <button class="add-to-cart" data-product="Sobretudo Preto" data-price="499,99">Comprar Agora</button>
                 </div>
+
+                <!-- Mais produtos de novidades... -->
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/novidades/sobretudo_branco.png" alt="Sobretudo Branco">
                     <h3>Sobretudo Branco</h3>
@@ -128,25 +142,29 @@
                     <h3>Sobretudo Xadrez</h3>
                     <p class="preco">R$ 529,99</p>
                     <p class="parcelado">ou 56x de R$ 88,33 sem juros</p>
+                    <!--adicionar ao carrinho -->
                     <button class="add-to-cart" data-product="Sobretudo Xadrez" data-price="529,99">Comprar Agora</button>
                 </div>
             </section>
 
         </section >
 
+        <!-- Seção de mais vendidos -->
         <section id="conteudo__vendidos">
             <h2>Mais vendidos</h2>
             <div class="conteudo__vendidos__classificacao">
+                <!-- Produtos mais vendidos com links -->
                 <a href="#numero2"><img src="./assets/images/mais_vendidos/2.png" alt="2º mais vendido: Vestido de bolinhas"></a>
                 <a href="#numero1"><img src="./assets/images/mais_vendidos/1.png" alt="1º mais vendido: Bleizer Azul"></a>
                 <a href="#numero3"><img src="./assets/images/mais_vendidos/3.png" alt="3º mais vendido: Short dourado"></a>
             </div>
         </section>
 
+        <!-- Seção de promoções -->
         <section id="conteudo__promocoes">
             <h2>Promoções</h2>
             <section class="conteudo__novidades__bleizers">
-    
+                <!-- Produtos em promoção -->
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/promocoes/saia_longa_rosa.png" alt="Saia Longa Rosa">
                     <h3>Saia Longa Rosa</h3>
@@ -154,8 +172,9 @@
                     <p class="preco">R$ 149,99</p>
                     <p class="parcelado">ou 3x de R$ 50,00 sem juros</p>
                     <button class="add-to-cart" data-product="Saia Longa Rosa" data-price="149,99">Comprar Agora</button>
-            
                 </div>
+
+                <!-- Mais produtos em promoção... -->
                 <div class="conteudo__novidades__variedade">
                     <img src="./assets/images/promocoes/camisa_de_popelina-listrado.png" alt="Popelina Listrada">
                     <h3>Popelina Listrada</h3>
@@ -183,9 +202,11 @@
             </section>
         </section>
 
+        <!-- Seção do vestuário -->
         <section id="conteudo__vestuario">
             <div class="carrossel__titulo">Vestuário</div>
                 
+                <!-- 1º carrossel da seção - parte de cima -->
                 <div class="swiper">
                     <h3>Parte de cima</h3>
                     <div class="swiper-wrapper">
@@ -195,6 +216,7 @@
                                 <button class="add-to-cart" data-product="Casaco Felpudo" data-price="320,99">Comprar Agora</button>
                         </div>
 
+                        <!-- Outros produtos da seção - parte de cima -->
                         <div class="swiper-slide">
                             <img src="./assets/images/vestuario/cima/breizer_marrom.png" alt="Bleizer Marrom">
                             <p>Bleizer Marrom<br><span>R$ 260,99</span></p>
@@ -287,19 +309,21 @@
                             <button class="add-to-cart" data-product="Sobretudo Xadrez" data-price="529,99">Comprar Agora</button>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
+                    <!-- Navegação do carrossel -->
+
+                    <!-- Paginação -->
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
+                    <!-- Botões de navegação -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <!-- If we need scrollbar -->
+                    <!-- Barra de rolagem -->
                     <div class="swiper-scrollbar"></div> 
                 </div>
                 
                     
-                <!-- Primeira linha de produtos -->
+                <!-- 2º carrossel da seção - parte de baixo -->
                 <div class="swiper">
                     <h3>Parte de baixo</h3>
                     <div class="swiper-wrapper">
@@ -309,6 +333,7 @@
                             <button class="add-to-cart" data-product="Saia Longa Vinho" data-price="200,99">Comprar Agora</button>
                         </div>
 
+                        <!-- Outros produtos da seção - parte de baixo -->
                         <div class="swiper-slide">
                             <img src="./assets/images/promocoes/saia_longa_rosa.png" alt="Saia Longa Rosa">
                             <p>Saia Longa Rosa<br><span>R$ 149,99</span></p>
@@ -400,17 +425,19 @@
                             <button class="add-to-cart" data-product="Jeans Branco" data-price="199,99">Comprar Agora</button>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
+                    <!-- Navegação do carrossel -->
+                    <!-- Paginação  -->
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
+                    <!-- Botões de navegação -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <!-- If we need scrollbar -->
+                    <!-- Barra de rolagem -->
                     <div class="swiper-scrollbar"></div>
                 </div>
 
+                <!-- 3º carrossel da seção - conjunto/vestidos -->
                 <div class="swiper">
                     <h3>Conjunto/Vestidos</h3>
                     <div class="swiper-wrapper">
@@ -421,6 +448,7 @@
                             <button class="add-to-cart" data-product="Vestido Curto/Azul" data-price="200,99">Comprar Agora</button>
                         </div>
                 
+                        <!-- Outros vestidos -->
                         <div class="swiper-slide">
                             <img src="./assets/images/vestuario/vest_conj/vestido_curto_preto.png" alt="Vestido Curto/Preto">
                             <p>Vestido Curto/Preto<br><span>R$ 220,99</span></p>
@@ -511,14 +539,15 @@
                             <button class="add-to-cart" data-product="Vestido  Curto" data-price="419,99">Comprar Agora</button>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
+                    <!-- Navegação do carrossel -->
+                    <!-- Paginação -->
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
+                    <!-- Botões de navegação -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <!-- If we need scrollbar -->
+                    <!-- Barra de rolagem -->
                     <div class="swiper-scrollbar"></div>
                 </div>
         </section>
@@ -703,9 +732,11 @@ window.addEventListener('click', function(event) {
 });
 </script>
 
+    <!-- Importa a biblioteca Swiper (versão 11) para permitir o uso de carrosséis de slides e outras funcionalidades interativas -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+        // Inicializa o Swiper para criar um carrossel de imagens ou conteúdos
         const swiper = new Swiper('.swiper', {
         spaceBetween: 10,          // Espaçamento entre os slides
         slidesPerView: 5,          // Quantos slides são exibidos ao mesmo tempo
@@ -715,8 +746,8 @@ window.addEventListener('click', function(event) {
             type: 'bullets',       // Tipo de paginação
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next', // Seletor do botão de próximo
+            prevEl: '.swiper-button-prev', // Seletor do botão anterior
         },
     });
     </script>

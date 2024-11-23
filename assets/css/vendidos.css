@@ -1,28 +1,28 @@
 @charset "UTF-8";
 
 #conteudo__vendidos {
-    background:#D9D9D9;
-    padding: 3em;
-    margin-bottom: 3em;
+    background:#D9D9D9; /* Define o fundo da seção com uma cor cinza claro (#D9D9D9) */
+    padding: 3em; /* Adiciona 3em de espaçamento interno (padding) em todos os lados da seção */
+    margin-bottom: 3em; /* Cria uma margem inferior de 3em, afastando a seção do conteúdo abaixo */
 }
 
 .conteudo__vendidos__classificacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
+    display: flex; /* Aplica o layout flexível, permitindo organizar os itens na linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens ao longo do eixo horizontal */
+    gap: 4em; /* Cria um espaço de 4em entre os itens dentro do container */
     
 }
 
 .conteudo__vendidos__classificacao img {
-    margin: 1em;
+    margin: 1em; /* Adiciona uma margem de 1em ao redor das imagens dentro da classificação */
 }
 
 
 /* Estilo base para as imagens */
 .conteudo__vendidos__classificacao img {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito de zoom e sombra */
-    cursor: pointer;
+    cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse sobre a imagem, indicando que é interativo */
 }
 
 /* Zoom e sombra ao passar o mouse */

@@ -1,64 +1,64 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação do arquivo como UTF-8 */
 
 .carrossel__titulo {
-    color: var(--cor-secundaria);
-    background-color: var(--cor-primaria);
-    text-align: center;
+    color: var(--cor-secundaria); /* Cor do texto do título do carrossel */
+    background-color: var(--cor-primaria); /* Cor de fundo do título do carrossel */
+    text-align: center;  /* Alinha o texto do título ao centro */
     text-transform: uppercase; /*deixar o texto todo maiúsculo*/
-    font-size: 18px;
-    font-weight: 700;
-    padding: 1em 0 0.5em 0;
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    font-weight: 700; /* Define o peso da fonte como negrito (700) */
+    padding: 1em 0 0.5em 0; /* Define o espaçamento interno (padding) em cima e em baixo */
 }
 
 .swiper h3 {
-    margin: 1.5em 0 0 1em;
+    margin: 1.5em 0 0 1em; /* Define a margem em volta do elemento h3 dentro do carrossel */
 }
 
 .swiper-slide {
-    margin: 2em 0 4em 0;
-    text-align: center;
+    margin: 2em 0 4em 0; /* Define a margem em volta de cada slide do carrossel */
+    text-align: center; /* Alinha o conteúdo do slide ao centro */
 }
 
 .swiper-slide img {
-    width: 65%;
+    width: 65%; /* Define a largura das imagens dentro do slide como 65% do seu elemento pai */
 }
 
 .swiper-slide p {
 
-    font-size: 1.2em;
-    font-weight: 300;
-    padding: 0.3em;
-    margin-bottom: 0.4em;
+    font-size: 1.2em; /* Define o tamanho da fonte do texto dentro do slide como 1.2 vezes o tamanho padrão */
+    font-weight: 300; /* Define o peso da fonte como leve (300) */
+    padding: 0.3em; /* Define o espaçamento interno (padding) ao redor do texto */
+    margin-bottom: 0.4em; /* Define a margem inferior do parágrafo */
 }
 
 .swiper-slide span {
 
-    font-weight: 500;
+    font-weight: 500; /* Define o peso da fonte como intermediário (500) para o span */
 }
 
 
 .swiper-pagination {
-    position: initial;
-    margin: 0.5em 0;
+    position: initial; /* Define a posição inicial da paginação, provavelmente para aplicar estilos adicionais em outra parte do código */
+    margin: 0.5em 0; /* Define a margem superior e inferior da paginação */
 }
 
 .add-to-cart {
-    background-color: var(--cor-septenaria);
-    color: var(--cor-secundaria);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0.6em 2em;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    border: none;
+    background-color: var(--cor-septenaria); /* Define a cor de fundo do botão de adicionar ao carrinho */
+    color: var(--cor-secundaria); /* Define a cor do texto do botão */
+    text-transform: uppercase; /* Transforma o texto do botão em maiúsculas */
+    text-decoration: none; /* Remove a decoração de texto (como sublinhado) do botão */
+    font-size: 20px; /* Define o tamanho da fonte do botão */
+    font-weight: 500; /* Define o peso da fonte como intermediário */
+    padding: 0.6em 2em; /* Define o espaçamento interno do botão (mais largo nas laterais) */
+    display: inline-block; /* Faz com que o botão seja exibido como um bloco em linha */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
 }
 
 .add-to-cart:hover {
-    background-color: #1a3a5d;
+    background-color: #1a3a5d; /* Altera a cor de fundo para um tom mais escuro quando o botão é hoverizado */
 }
 
 .swiper-slide .add-to-cart {
-    font-size: 16px;
+    font-size: 16px; /* Define um tamanho de fonte menor para o botão dentro do carrossel */
 }

@@ -1,35 +1,41 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação do arquivo como UTF-8 */
 
+/* Estilo para as seções de novidades e promoções */
 #conteudo__novidades, #conteudo__promocoes {
-    margin: 3em;
+    margin: 3em; /* Adiciona margem de 3em ao redor das seções de novidades e promoções */
 }
 
+/* Estilo para a seção de novidades, especificamente para a categoria "bleizers" */
 .conteudo__novidades__bleizers {
-    text-align: center;
+    text-align: center; /* Centraliza o conteúdo dentro da seção de novidades */
 }
 
+/* Estilo para cada item de variedade dentro das novidades */
 .conteudo__novidades__variedade {
-    margin: 1em 1.5em;
-    display: inline-block;
+    margin: 1em 1.5em; /* Adiciona margem de 1em verticalmente e 1.5em horizontalmente ao redor de cada item */
+    display: inline-block; /* Exibe os itens de variedade em linha, permitindo que ocupem o espaço disponível */
 }
 
+/* Estilo para o título (h3) dentro dos itens de variedade */
 .conteudo__novidades__variedade h3 {
-    font-size: 24px;
-    font-weight: 300;
-    padding: 0.3em;
-    margin: 0;
+    font-size: 24px; /* Define o tamanho da fonte como 24px */
+    font-weight: 300; /* Define o peso da fonte como 300 (letra mais fina) */
+    padding: 0.3em; /* Adiciona espaçamento interno de 0.3em ao redor do título */
+    margin: 0; /* Remove qualquer margem padrão */
 }
 
+/* Estilo para o preço dentro dos itens de variedade */
 .conteudo__novidades__variedade .preco {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
+    font-size: 24px; /* Define o tamanho da fonte do preço como 24px */
+    font-weight: 500; /* Define o peso da fonte como 500 (letra mais espessa) */
+    margin: 0; /* Remove qualquer margem padrão */
 }
 
+/* Estilo para a informação de parcelamento dentro dos itens de variedade */
 .conteudo__novidades__variedade .parcelado {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 1em;
+    font-size: 15px; /* Define o tamanho da fonte do parcelamento como 15px */
+    font-weight: 500; /* Define o peso da fonte como 500 (letra mais espessa) */
+    margin-bottom: 1em; /* Adiciona margem de 1em na parte inferior para espaçamento */
 }
 
 
