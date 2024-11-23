@@ -101,14 +101,18 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-width: 400px; /* Largura mínima maior */
+    min-width: 600px; /* Largura mínima maior */
     max-width: 600px; /* Largura máxima maior */
     height: 88vh; /* Altura automática para o menu */
     position: absolute;
     top: 100%;
     right: 30px; /* Pode ajustar o alinhamento da direita */
     z-index: 1000;
-    display: none;
+    
+}
+
+#menu {
+    width: 700px;
 }
 
 /* Estilos do voltar-container */
@@ -140,7 +144,7 @@
     left: 80px;          /* Move a imagem para a direita a partir de sua posição original */
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     margin-top: 110px;
 }
 

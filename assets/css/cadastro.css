@@ -1,0 +1,248 @@
+* {
+    font-family: sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+/* Estilos para a container do formulário */
+.container {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 10px; 
+    width: 390px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative; 
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #333333; 
+}
+
+.contato p a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+.contato p {
+    margin-left: 20px;
+    margin-top: 5px; 
+    margin-bottom: 0; 
+}
+
+input {
+    width: 100%;  /* Garantir que todos os campos de input tenham 100% de largura */
+    padding: 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+    margin-left: 20px;
+}
+
+label {
+    margin-left: 20px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #CC808C;
+    cursor: pointer;
+    border: none;
+    width: 210px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #162B40;
+}
+
+/* Estilos para a senha com o ícone dentro do campo */
+.senha-container {
+    position: relative;
+    width: 100%;  /* Ajuste para ocupar toda a largura */
+    margin-left: 20px;
+}
+
+.senha-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+}
+
+input[type="password"] {
+    width: 100%;  /* Agora o campo de senha tem a mesma largura que os outros */
+    padding: 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+    padding-right: 40px; /* Espaço maior para o ícone de olho */
+}
+
+input[type="text"] {
+    width: 100%;  /* Todos os campos de texto têm a mesma largura */
+    padding: 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+    padding-right: 30px; /* Ajuste para que o ícone de olho não interfira no campo de texto */
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.cabeçalho {
+    font-size: large;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.titulo {
+    font-size: 30px;
+    color: #333333;
+    margin-left: 20px;
+}
+
+.descrição {
+    margin-top: 0.5;
+    color: #999999;
+    margin-left: 20px;
+}
+
+.contato input[type="email"],
+.contato input[type="password"] {
+    margin-bottom: 8px; 
+}
+
+.contato input[type="submit"] {
+    margin-top: 20px;
+}
+
+.contato p {
+    margin-top: 8px; 
+    margin-bottom: 0;
+}
+
+/* Estilos adicionais para o formulário de cadastro */
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"] {
+    width: 80%;  /* Garantir que todos os campos de input do cadastro tenham 100% de largura */
+    padding: 12px;
+    margin: 1px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cadastro-form input[type="submit"] {
+    color: white;
+    background-color: #CC808C;
+    cursor: pointer;
+    border: none;
+    width: 210px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.cadastro-form input[type="submit"]:hover {
+    background-color: #162B40;
+}
+
+.cadastro-form label {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.cadastro-form a {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.cadastro-form a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.cadastro-form p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Adicionando ícone de olho ao lado dos campos de senha no formulário de cadastro */
+
+.senha-container {
+    position: relative;
+    width: 100%;  /* Ajuste para ocupar toda a largura do campo */
+    margin-left: 1px;  /* Para alinhar com os outros campos */
+}
+
+.senha-container i {
+    position: absolute;
+    top: 40%;
+    right: 60px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 13px; /* Ajuste o tamanho do ícone */
+}
+
+input[type="password"] {
+    width: 100%;  /* O campo de senha agora ocupa 100% da largura */
+    padding: 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333333;
+    padding-right: 40px; /* Ajuste do espaço para o ícone de olho */
+}
