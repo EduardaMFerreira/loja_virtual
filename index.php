@@ -6,7 +6,7 @@
         <!-- Inclui a folha de estilo principal com a versão especificada (para controle de cache) -->
         <link rel="stylesheet" href="./style.css?v=1.0">
         <!-- Scripts JavaScript do site, carregados de forma assíncrona com "defer" para não bloquear o carregamento da página -->
-        <script src="./assets/js/carrossel.js" defer></script> 
+        <script src="./assets/js/carrinho.js" defer></script> 
         <script src="./assets/js/pesquisa.js" defer></script> 
         <script src="./assets/js/vendidos.js" defer></script> 
         <!-- Inclui o Bootstrap, framework de estilo CSS para layout e componentes -->
@@ -16,6 +16,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <!-- Inclui o CSS do Swiper (uma biblioteca de carrossel e slides) -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
         <title>Fashion Luar</title>
     </head>
     <body>

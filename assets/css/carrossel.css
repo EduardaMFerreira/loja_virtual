@@ -62,3 +62,8 @@
 .swiper-slide .add-to-cart {
     font-size: 16px; /* Define um tamanho de fonte menor para o botão dentro do carrossel */
 }
+
+.add-to-cart.clicked {
+    background-color: #1a3a5d; /* Azul para os botões clicados */
+    color: white; /* Ajuste para o texto se necessário */
+}

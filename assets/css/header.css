@@ -37,7 +37,7 @@
 .cabecalho__conteudo__pesquisa__barra {
     border: none; /* Remove a borda da barra de pesquisa */
     width: 55rem; /* Define a largura da barra de pesquisa */
-    height: 3rem; /* Define a altura da barra de pesquisa */
+    height: 2.85rem; /* Define a altura da barra de pesquisa */
     border-radius: 0px 8px 8px 0px; /* Arredonda os cantos direito e inferior da barra de pesquisa */
     font-size: 0.9em; /* Define o tamanho da fonte na barra de pesquisa */
 }  

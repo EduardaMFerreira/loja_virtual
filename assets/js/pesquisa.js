@@ -7,11 +7,11 @@ searchForm.addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio do formulário
 
     // Obtém o valor digitado no campo de pesquisa e converte para minúsculas
-    const searchTerm = searchInput.value.toLowerCase(); 
+    const searchTerm = searchInput.value.toLowerCase();
 
     // Seleciona todas as seções dentro do conteúdo principal (seções de produtos)
     const allProductsSections = document.querySelectorAll('.conteudo > section');
-    let found = false;// Variável que indica se algum produto foi encontrado
+    let found = false; // Variável que indica se algum produto foi encontrado
 
     // Loop por todas as seções de produtos
     allProductsSections.forEach(section => {
@@ -20,33 +20,30 @@ searchForm.addEventListener('submit', function (event) {
 
         // Se a seção for de vestuário, ajusta a seleção dos produtos (produtos têm o nome dentro de <p>)
         if (section.id === 'conteudo__vestuario') {
-        products = section.querySelectorAll('.swiper p'); // No caso de vestuário, o nome dos produtos está em <p>
+            products = section.querySelectorAll('.swiper p'); // No caso de vestuário, o nome dos produtos está em <p>
         }
 
-        let sectionContainsProduct = false; // Flag que indica se a seção contém ao menos um produto correspondente
+        let sectionContainsVisibleProducts = false; // Indica se pelo menos um produto visível existe na seção
 
         // Loop pelos produtos dentro da seção
         products.forEach(product => {
+            const productContainer = product.closest('.swiper') || product.parentElement;
+
             // Verifica se o nome do produto contém o termo de pesquisa
             if (product.textContent.toLowerCase().includes(searchTerm)) {
-                 // Se for encontrado, exibe o produto
-                const productContainer = product.closest('.swiper') || product.parentElement;
-                productContainer.style.display = 'block'; // Exibe o produto
-                sectionContainsProduct = true; // Marca a seção como contendo produtos encontrados
+                productContainer.style.display = 'block'; // Exibe o produto correspondente
+                sectionContainsVisibleProducts = true; // Marca que a seção contém produtos encontrados
+                found = true; // Marca que algum produto foi encontrado
             } else {
-                // Caso contrário, oculta o produto
-                const productContainer = product.closest('.swiper') || product.parentElement;
-                productContainer.style.display = 'none'; // Oculta o produto
+                productContainer.style.display = 'none'; // Oculta o produto que não corresponde
             }
         });
 
-        // Se ao menos um produto for encontrado, exibe a seção
-        if (sectionContainsProduct) {
-            section.style.display = 'block'; // Exibe a seção de produtos
-            found = true; // Marca que algum item foi encontrado
+        // Exibe ou oculta a seção com base nos produtos visíveis
+        if (sectionContainsVisibleProducts) {
+            section.style.display = 'block'; // Exibe a seção, mas apenas com os produtos encontrados
         } else {
-            // Caso contrário, esconde a seção
-            section.style.display = 'none'; // Oculta a seção
+            section.style.display = 'none'; // Oculta a seção completamente
         }
     });
 
